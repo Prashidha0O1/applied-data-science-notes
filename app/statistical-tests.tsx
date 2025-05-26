@@ -11,18 +11,18 @@ export default function StatisticalTests() {
           <strong>Purpose:</strong> Compares the means of one or two groups.
         </p>
         <p className="mt-2">
-          <strong>Assumptions:</strong> Data is continuous, samples are random, data is approximately normally distributed, variances are similar (for independent t-test, though Welch's t-test handles unequal variances).
+          <strong>Assumptions:</strong> Data is continuous, samples are random, data is approximately normally distributed, variances are similar (for independent t-test, though Welch&apos;s t-test handles unequal variances).
         </p>
         <div className="mt-4">
           <h4 className="font-semibold">Types:</h4>
           <ul className="list-disc ml-6 mt-2 space-y-1">
-            <li><strong>One-Sample:</strong> Compares one group's mean to a known value. stats.ttest_1samp()</li>
+            <li><strong>One-Sample:</strong> Compares one group&apos;s mean to a known value. stats.ttest_1samp()</li>
             <li><strong>Independent Samples:</strong> Compares means of two unrelated groups. stats.ttest_ind()</li>
             <li><strong>Paired Samples:</strong> Compares means of two related groups (e.g., before/after). stats.ttest_rel()</li>
           </ul>
         </div>
         <p className="mt-2">
-          <strong>Interpretation:</strong> Look at the p-value. If p≤0.05, reject H₀ and conclude there's a significant difference in means. The t-statistic indicates the size of the difference relative to the variation.
+          <strong>Interpretation:</strong> Look at the p-value. If p≤0.05, reject H₀ and conclude there&apos;s a significant difference in means. The t-statistic indicates the size of the difference relative to the variation.
         </p>
       </div>
 
@@ -37,7 +37,7 @@ export default function StatisticalTests() {
         <div className="mt-4">
           <h4 className="font-semibold">Interpretation:</h4>
           <ul className="list-disc ml-6 mt-2 space-y-1">
-            <li><strong>For variances:</strong> The F-statistic is the ratio of variances (s₁²/s₂²). If it's close to 1, variances are similar. Look at the p-value; if p≤0.05, reject H₀ (that variances are equal).</li>
+            <li><strong>For variances:</strong> The F-statistic is the ratio of variances (s₁²/s₂²). If it&apos;s close to 1, variances are similar. Look at the p-value; if p≤0.05, reject H₀ (that variances are equal).</li>
             <li><strong>In ANOVA:</strong> See ANOVA section below.</li>
           </ul>
         </div>
@@ -49,7 +49,7 @@ export default function StatisticalTests() {
           <strong>Purpose:</strong> Compares the means of three or more groups.
         </p>
         <p className="mt-2">
-          <strong>Assumptions:</strong> Samples are independent, data within groups is normally distributed, homoscedasticity (variances are equal across groups - can be checked with Levene's test or Bartlett's test).
+          <strong>Assumptions:</strong> Samples are independent, data within groups is normally distributed, homoscedasticity (variances are equal across groups - can be checked with Levene&apos;s test or Bartlett&apos;s test).
         </p>
         <p className="mt-2">
           <strong>How it works:</strong> It tests if the variance between groups is significantly larger than the variance within groups.
@@ -66,7 +66,7 @@ export default function StatisticalTests() {
           <ul className="list-disc ml-6 mt-2 space-y-1">
             <li>Look at the F-statistic and its associated p-value.</li>
             <li>If p≤0.05, reject H₀ (that all group means are equal). This tells you at least one group mean is different.</li>
-            <li>If significant, perform post-hoc tests (e.g., Tukey's HSD) to find out which specific pairs of groups have different means.</li>
+            <li>If significant, perform post-hoc tests (e.g., Tukey&apos;s HSD) to find out which specific pairs of groups have different means.</li>
           </ul>
         </div>
       </div>
@@ -118,7 +118,7 @@ export default function StatisticalTests() {
           <h4 className="font-semibold">Interpretation:</h4>
           <ul className="list-disc ml-6 mt-2 space-y-1">
             <li><strong>Coefficients:</strong> Are they positive or negative? How large are they? Are they statistically significant (check their p-values)?</li>
-            <li><strong>R² (R-squared):</strong> The proportion of variance in the dependent variable (y) that is explained by the independent variable(s) (x). Ranges from 0 to 1. A higher R² indicates a better fit, but doesn't guarantee a good model.</li>
+            <li><strong>R² (R-squared):</strong> The proportion of variance in the dependent variable (y) that is explained by the independent variable(s) (x). Ranges from 0 to 1. A higher R² indicates a better fit, but doesn&apos;t guarantee a good model.</li>
             <li><strong>F-test (Overall Significance):</strong> Checks if at least one predictor variable is significantly related to the outcome. Look at its p-value.</li>
           </ul>
         </div>
@@ -137,7 +137,7 @@ export default function StatisticalTests() {
       <div className="mt-6">
         <h3 className="font-semibold">6. SQL Queries 💾</h3>
         <p className="mt-2">
-          SQL (Structured Query Language) is used to communicate with databases. For analysis, you'll mainly be retrieving data.
+          <strong>Purpose:</strong> SQL (Structured Query Language) is used to communicate with databases. For analysis, you&apos;ll mainly be retrieving data.
         </p>
         <div className="mt-4">
           <h4 className="font-semibold">Basic Structure:</h4>
@@ -186,7 +186,7 @@ export default function StatisticalTests() {
             <div>    COUNT(o.OrderID) AS NumberOfOrders</div>
             <div>FROM Customers c</div>
             <div>LEFT JOIN Orders o ON c.CustomerID = o.CustomerID</div>
-            <div>WHERE c.Country = 'Germany'</div>
+            <div>WHERE c.Country = &quot;Germany&quot;</div>
             <div>GROUP BY c.CustomerName</div>
             <div>HAVING COUNT(o.OrderID) &gt; 5</div>
             <div>ORDER BY NumberOfOrders DESC;</div>
@@ -208,7 +208,7 @@ export default function StatisticalTests() {
             <li><strong>Subject-Oriented:</strong> Data is organized around major subjects (e.g., Customer, Product, Sales) rather than business processes.</li>
             <li><strong>Integrated:</strong> Data from various sources is made consistent (naming conventions, units, encoding).</li>
             <li><strong>Time-Variant:</strong> Data is kept over long periods, allowing for historical analysis and trend-spotting. It always has a time dimension.</li>
-            <li><strong>Non-Volatile:</strong> Data in the warehouse is not updated in real-time. It's loaded periodically and is typically read-only. Once in, it doesn't change.</li>
+            <li><strong>Non-Volatile:</strong> Data in the warehouse is not updated in real-time. It&apos;s loaded periodically and is typically read-only. Once in, it doesn&apos;t change.</li>
           </ul>
         </div>
         <div className="mt-4">
@@ -217,13 +217,13 @@ export default function StatisticalTests() {
           <ul className="list-disc ml-6 mt-2 space-y-1">
             <li><strong>Extract:</strong> Pulling data from source systems (databases, flat files, APIs).</li>
             <li><strong>Transform:</strong> Cleaning, standardizing, integrating, and structuring the data (this is often the most complex step).</li>
-            <li><strong>Load:</strong> Inserting the transformed data into the data warehouse.</li>
+            <li><strong>Load:</strong> Transferring the transformed data into the data warehouse.</li>
           </ul>
         </div>
         <div className="mt-4">
           <h4 className="font-semibold">Data Mart:</h4>
           <p className="mt-2">
-            A subset of a data warehouse focused on a specific business line, department, or subject area (e.g., a Marketing data mart). It's smaller and often easier for specific teams to use.
+            A subset of a data warehouse focused on a specific business line, department, or subject area (e.g., a Marketing data mart). It&apos;s smaller and often easier for specific teams to use.
           </p>
         </div>
         <div className="mt-4">

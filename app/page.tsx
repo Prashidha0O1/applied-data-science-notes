@@ -14,7 +14,7 @@ export default function NotesPage() {
           <div className="mt-4">
             <h3 className="font-semibold">1. Define Data Science and explain its key components. (8 marks)</h3>
             <p className="mt-2">
-              Data Science is an interdisciplinary field that uses statistical, computational, and domain expertise to extract insights from data.
+              <strong>Definition:</strong> Data Science is an interdisciplinary field that uses statistical, computational, and domain expertise to extract insights from data.
             </p>
             <ul className="list-disc ml-6 mt-2 space-y-1">
               <li><strong>Data Collection:</strong> Gathering structured/unstructured data from various sources (e.g., databases, APIs).</li>
@@ -138,7 +138,7 @@ export default function NotesPage() {
             <p className="mt-2">
               <strong>Data:</strong><br />
               Raw, unstructured facts with no inherent meaning.<br />
-              Example: A customer's purchase date.
+              Example: A customer&apos;s purchase date.
             </p>
             <p className="mt-2">
               <strong>Information:</strong><br />
@@ -332,7 +332,7 @@ export default function NotesPage() {
                 <li><strong>arr[0]:</strong> First element.</li>
                 <li><strong>arr[1, 2]:</strong> Element at row 1, column 2.</li>
                 <li><strong>arr[:2, 1:]:</strong> Rows up to (but not including) 2, columns from 1 to the end.</li>
-                <li><strong>Boolean Indexing:</strong> arr[arr &gt; 5] - Selects elements greater than 5.</li>
+                <li><strong>Boolean Indexing:</strong> arr[arr  5] - Selects elements greater than 5.</li>
               </ul>
               <p className="mt-2"><strong>Broadcasting:</strong> How NumPy handles operations on arrays of different shapes. Smaller arrays are "broadcast" across the larger array.</p>
             </div>
@@ -784,8 +784,8 @@ export default function NotesPage() {
               <h4 className="font-semibold">ETL (Extract, Transform, Load):</h4>
               <p className="mt-2">The core process for getting data into a warehouse.</p>
               <ul className="list-disc ml-6 mt-2 space-y-1">
-                <li><strong>Extract:</strong> Pulling data from source systems (databases, flat files, APIs).</li>
-                <li><strong>Transform:</strong> Cleaning, standardizing, integrating, and structuring the data (this is often the most complex step).</li>
+                <li><strong>Extract:</strong> Retrieves data from various sources (e.g., databases, APIs).</li>
+                <li><strong>Transform:</strong> Cleans, formats, and integrates data (e.g., standardizing date formats, removing duplicates).</li>
                 <li><strong>Load:</strong> Transferring the transformed data into the data warehouse.</li>
               </ul>
             </div>
