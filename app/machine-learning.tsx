@@ -196,7 +196,7 @@ export default function MachineLearning() {
         </div>
         <div className="mt-4 p-4 bg-blue-50 border-l-4 border-blue-400">
           <p className="font-semibold text-blue-800">Exam Tip:</p>
-          <p className="text-blue-700">Know Linear Regression's equation, purpose (continuous prediction), and metrics (MSE, RMSE, R²). Be ready to explain with an example.</p>
+          <p className="text-blue-700">Know Linear Regression&apos;s equation, purpose (continuous prediction), and metrics (MSE, RMSE, R²). Be ready to explain with an example.</p>
         </div>
       </div>
 
@@ -218,7 +218,7 @@ export default function MachineLearning() {
           <ul className="list-disc ml-6 mt-2 space-y-1">
             <li><strong>Feature Creation:</strong>
               <ul className="list-disc ml-6 mt-1">
-                <li>Example: Creating "total_spend" by summing monthly customer purchases.</li>
+                <li>Example: Creating &quot;total_spend&quot; by summing monthly customer purchases.</li>
               </ul>
             </li>
             <li><strong>Feature Transformation:</strong>
@@ -228,7 +228,7 @@ export default function MachineLearning() {
             </li>
             <li><strong>Feature Encoding:</strong>
               <ul className="list-disc ml-6 mt-1">
-                <li>Example: One-hot encoding categorical variables (e.g., "region" into binary columns).</li>
+                <li>Example: One-hot encoding categorical variables (e.g., &quot;region&quot; into binary columns).</li>
               </ul>
             </li>
             <li><strong>Feature Scaling:</strong>
@@ -247,9 +247,9 @@ export default function MachineLearning() {
           <h4 className="font-semibold">Example:</h4>
           <p className="mt-2">For house price prediction:</p>
           <ul className="list-disc ml-6 mt-2 space-y-1">
-            <li>Create feature: "price_per_sqft" = house price ÷ square footage.</li>
-            <li>Encode: Convert "neighborhood" into dummy variables.</li>
-            <li>Scale: Normalize "square_footage" to 0-1 range.</li>
+            <li>Create feature: &quot;price_per_sqft&quot; = house price ÷ square footage.</li>
+            <li>Encode: Convert &quot;neighborhood&quot; into dummy variables.</li>
+            <li>Scale: Normalize &quot;square_footage&quot; to 0-1 range.</li>
           </ul>
         </div>
         <div className="mt-4 p-4 bg-blue-50 border-l-4 border-blue-400">
@@ -350,7 +350,7 @@ export default function MachineLearning() {
               <ul className="list-disc ml-6 mt-2 space-y-2">
                 <li>
                   <strong>Feature Creation:</strong> Compute new features<br/>
-                  <span className="text-gray-600">Example: "price_per_sqft" from price and area</span><br/>
+                  <span className="text-gray-600">Example: &quot;price_per_sqft&quot; from price and area</span><br/>
                   <span className="text-gray-600">Benefit: Captures domain-specific patterns for better predictions</span>
                 </li>
                 <li>
